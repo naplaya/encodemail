@@ -2,9 +2,9 @@
 	"author": "Dominik Sust",
 	"email": "dominik.sust@gmail.com",
 	"website": "http://itwerkstatt.omdriebigs-gspann.de",
-	"version": "1.1",
+	"version": "1.2",
 	"releaseDate": "2016-07-04",
 	"license": "MIT",
-	"compatible": "1.1,1.2,1.3,1.4,1.5,1.5.2,1.6,1.6.2,2.0,2.1,2.2,2.3",
+	"compatible": "1.1,1.2,1.3,1.4,1.5,1.5.2,1.6,1.6.2,2.0,2.1,2.2,2.3,3.8.1",
 	"notes": ""
 }
