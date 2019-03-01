@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "E-posta Kodlayıcı",
+		"description": "SPAM Postalarını önlemek için tüm e-posta adreslerini sayfalarda ve yazılarda kodlar"
+	}
+}
