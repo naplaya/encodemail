@@ -8,30 +8,31 @@ class pluginEncodeMail extends Plugin {
 
 	public function postBegin()
 	{
-		global $Post;
+		global $post;
 		
-		$temp = $this->htmlizeEmails($Post->getField('content'));
-		$Post->setField('content', $temp);
+		$temp = $this->htmlizeEmails($post->getValue('content'));
+		$post->setField('content', $temp);
 
-		$temp = $this->htmlizeEmails($Post->getField('contentRaw'));
-		$Post->setField('contentRaw', $temp);
+		$temp = $this->htmlizeEmails($post->getValue('contentRaw'));
+		$post->setField('contentRaw', $temp);
 
-		$temp = $this->htmlizeEmails($Post->getField('breakContent'));
-		$Post->setField('breakContent', $temp);
+		$temp = $this->htmlizeEmails($post->getValue('breakContent'));
+		$post->setField('breakContent', $temp);
 	}
 
 	public function pageBegin()
 	{
-		global $Page;
-		
-		$temp = $this->htmlizeEmails($Page->getField('content'));
-		$Page->setField('content', $temp);
+		global $page;
+		print_r($page);
 
-		$temp = $this->htmlizeEmails($Page->getField('contentRaw'));
-		$Page->setField('contentRaw', $temp);
+		$temp = $this->htmlizeEmails($page->getValue('content'));
+		$page->setField('content', $temp);
 
-		$temp = $this->htmlizeEmails($Page->getField('breakContent'));
-		$Page->setField('breakContent', $temp);
+		$temp = $this->htmlizeEmails($page->getValue('contentRaw'));
+		$page->setField('contentRaw', $temp);
+
+		$temp = $this->htmlizeEmails($page->getValue('breakContent'));
+		$page->setField('breakContent', $temp);
 	}
 
 	//Finds email addresses in content
